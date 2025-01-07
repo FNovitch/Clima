@@ -5,7 +5,7 @@
 <br>
 <br>
 <h3 align="center">Resumo do Projeto</h3>
-<h6>Um site para consultar como está o tempo e a velocidade do vento em sua cidade, ele foi feito utilizando da responsividade e de boas práticas de programação,visando o aprendizado com o HTML, CSS, TypeScript na utilização do DOM e manipulação de elementos na tela e na requisição de API utilizando async, await, try e catch</h6>
+<h6>Um site para consultar como está o tempo e a velocidade do vento em sua cidade, ele foi feito utilizando da responsividade e de boas práticas de programação,visando o aprendizado com o HTML, CSS, TypeScript na utilização do DOM e manipulação de elementos na tela e na requisição de API utilizando async, await, try e catch.</h6>
 <br>
 <br>
 <h5>✔️ Técnicas e tecnologias utilizadas</h5>
