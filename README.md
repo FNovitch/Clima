@@ -18,4 +18,4 @@
 
 <br>
 <h6>Veja o deploy do projeto abaixo!!</h6>
- <a href="https://tempus-fnovitchs-projects.vercel.app" target="_blank"><em>Clique aqui</em></a>
+ <a href="https://tempus-fnovitchs-projects.vercel.app" target="_blank"><em>Clique aqui !</em></a>
