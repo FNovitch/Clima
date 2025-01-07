@@ -21,7 +21,7 @@ formElement.addEventListener("submit", (event) => __awaiter(void 0, void 0, void
     event.preventDefault();
     const input = searchInput.value.trim();
     if (!input) {
-        mostrarAviso("Por favor, insira o nome de uma cidade.");
+        mostrarAviso("Por favor, insira o nome de um local!");
         return;
     }
     limparInfo();
