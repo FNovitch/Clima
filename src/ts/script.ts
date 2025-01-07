@@ -29,7 +29,8 @@ formElement.addEventListener("submit", async (event) => {
     )}&appid=${apiKey}&units=metric&lang=pt_br`;
     const response = await fetch(url);
 
-    if (!response.ok) throw new Error("Localização não encontrada!");
+    if (!response.ok)
+      throw new Error("Localização não encontrada, tente novamente!");
 
     const data = await response.json();
     mostrarInfo({
