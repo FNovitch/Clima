@@ -17,11 +17,14 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
-
-h1 {
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 300;
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.logo {
+  width: 25%;
+  height: 25%;
 }
 .typewriter {
   color: #ffffff;
@@ -30,15 +33,16 @@ h1 {
   border-right: 2px solid;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 4s linear, blink-caret 0.75s step-end infinite;
+  animation: typing 3s linear, blink-caret 1s step-end infinite;
   margin-bottom: 25px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 39%;
+    width: 40%;
   }
 }
 
@@ -152,17 +156,45 @@ h1 {
   padding-top: 20px;
 }
 
-footer {
-  position: absolute;
-  bottom: 10px;
-  color: #fff;
-  font-size: 13px;
-}
-
 @media (width < 520px) {
   .typewriter {
-    overflow: inherit;
-    white-space: inherit;
+    width: 75%;
+    overflow: hidden;
     text-align: center;
+    white-space: normal;
+    animation: none;
+    border-right: none;
+  }
+
+  .logoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media (width: 768px) {
+  .logoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 40%;
+    height: 40%;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 65%;
+    }
   }
 }
