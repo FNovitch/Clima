@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/src/images/cody-schroeder-L99UKlcUBJY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 300;
+}
+.typewriter {
+  color: #ffffff;
+  font-weight: 300;
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4s linear, blink-caret 0.75s step-end infinite;
+  margin-bottom: 25px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 39%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.busca {
+  display: flex;
+  width: 300px;
+}
+.busca #searchInput {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+}
+.busca button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 0;
+  background-color: #0e576a;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+  font-family: "Poppins", sans-serif;
+}
+.busca button:hover {
+  transform: scale(1.1);
+}
+
+.resultado {
+  width: 300px;
+  display: none;
+  border: 1px #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+.info .temp {
+  flex: 1;
+  text-align: center;
+}
+.info .vento {
+  flex: 1;
+  text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+  color: #b0a9a9;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+.ventoInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+.ventoArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.ventoPonto {
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transform-origin: left;
+}
+
+.aviso {
+  color: #fff;
+  padding-top: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-size: 13px;
+}
+
+@media (width < 520px) {
+  .typewriter {
+    overflow: inherit;
+    white-space: inherit;
+    text-align: center;
+  }
+}
